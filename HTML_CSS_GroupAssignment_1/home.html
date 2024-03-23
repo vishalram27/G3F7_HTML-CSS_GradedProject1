@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Pharmacy | Default Landing Page</title>
+</head>
+
+<body>
+    <div class="header">Pharmacy</div>
+    <div id="navbar">
+        <a href="#">Home</a>
+        <div id="dropdown">
+            <button id="dropbtn">Our Medicine</button>
+            <div id="dropdown-content">
+                <a href="#">Fever</a>
+                <a href="#">Muscle Pains</a>
+                <a href="#">Cough and Cold</a>
+            </div>
+        </div>
+        <div id="dropdown">
+            <button id="dropbtn">Health Care</button>
+            <div id="dropdown-content">
+                <a href="#">Baby Care</a>
+                <a href="#">Home Care</a>
+                <a href="#">Personal Care</a>
+                <a href="#">Pet Care</a>
+                <a href="#">Skin Care</a>
+            </div>
+        </div>
+        <a href="Lab-Test.html">Lab Test</a>
+    </div>
+    <div class="myslides">
+        <img class="mySlides" src="Images/Animation/ani1.jpg">
+        <img class="mySlides" src="Images/Animation/ani2.png">
+        <img class="mySlides" src="Images/Animation/ani3.jpg">
+        <img class="mySlides" src="Images/Animation/ani4.jpg">
+        <img class="mySlides" src="Images/Animation/ani5.jpg">
+    </div>
+    <div id="main">
+        <h2><b>Covid Care</b></h2>
+        <div class="product">
+            <h4><b>Covid Test Kit</b></h4>
+            <img src="Images/Products/c1.jpg" alt="Covid Test Kit">
+            <p>Product Price: ₹. 40</p>
+            <p>Offer Price: ₹. 30/-</p>
+            <button type="submit" value="Add to cart">Add to cart</button>
+        </div>
+        <div class="product">
+            <h4><b>Covid Essentials</b></h4>
+            <img src="Images/Products/c2.jpg" alt="Covid Essentials">
+            <p>Product Price: ₹. 240</p>
+            <p>Offer Price: ₹. 170/-</p>
+            <button type="submit" value="Add to cart">Add to cart</button>
+        </div>
+        <div class="product">
+            <h4><b>Sanitizer Bottle</b></h4>
+            <img src="Images/Products/c3.jpg" alt="Sanitizer Bottle">
+            <p>Product Price: ₹. 99</p>
+            <p>Offer Price: ₹. 87/-</p>
+            <button type="submit" value="Add to cart">Add to cart</button>
+        </div>
+        <div class="product">
+            <h4><b>Mask</b></h4>
+            <img src="Images/Products/c4.jpg" alt="Face Mask">
+            <p>Product Price: ₹. 45</p>
+            <p>Offer Price: ₹. 35/-</p>
+            <button type="submit" value="Add to cart">Add to cart</button>
+        </div>
+        <h2><b>Diabetes Care</b></h2>
+        <div class="product">
+            <h4><b>BRG-34</b></h4>
+            <img src="Images/Products/d1.jpg" alt="BRG-34">
+            <p>Product Price: ₹. 45</p>
+            <p>Offer Price: ₹. 30/-</p>
+            <button type="submit" value="Add to cart">Add to cart</button>
+        </div>
+        <div class="product">
+            <h4><b>Dabur Sugar Free</b></h4>
+            <img src="Images/Products/d2.jpg" alt="Dabur Sugar Free">
+            <p>Product Price: ₹. 45</p>
+            <p>Offer Price: ₹. 30/-</p>
+            <button type="submit" value="Add to cart">Add to cart</button>
+        </div>
+        <div class="product">
+            <h4><b>Colgate Diabetics Paste</b></h4>
+            <img src="Images/Products/d3.jpg" alt="Colgate Diabetics Paste">
+            <p>Product Price: ₹. 45</p>
+            <p>Offer Price: ₹. 30/-</p>
+            <button type="submit" value="Add to cart">Add to cart</button>
+        </div>
+        <div class="product">
+            <h4><b>UNIBIC Diabetes Biscuit</b></h4>
+            <img src="Images/Products/d4.png" alt="UNIBIC Diabetes Biscuit">
+            <p>Product Price: ₹. 35</p>
+            <p>Offer Price: ₹. 30/-</p>
+            <button type="submit" value="Add to cart">Add to cart</button>
+        </div>
+    </div>
+    <div class="footer">
+        © 2024 All rights reserved. | Pharmacy Shop - Frontend Graded Assignment - 1(HTML & CSS) | Designed by G3_F7 -
+        Aug'23-Sep'24
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3500);
+        }
+    </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

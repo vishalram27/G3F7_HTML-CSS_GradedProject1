@@ -1,0 +1,181 @@
+body {
+    background-color: whitesmoke;
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+.header {
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.685);
+    top: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    bottom: 0%;
+    text-align: center;
+    display: block;
+    width: -webkit-fill-available;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+#navbar a {
+    float: left;
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+#dropdown #dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+#navbar a:hover {
+    background-color: black;
+}
+
+#dropdown:hover #dropbtn {
+    background-color: black;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#dropdown-content a {
+    float: none;
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+#dropdown:hover #dropdown-content {
+    display: block;
+    position: fixed;
+}
+
+.mySlides {
+    border: solid 2px steelblue;
+    position: static;
+    max-height: 500px;
+    width: 100%;
+    margin: 3.9em 0em 2em 0em;
+}
+
+#content {
+    padding: 1px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    [class*="mySlides"] {
+        width: 100%;
+        padding: 60px 0px 5px 0px;
+    }
+}
+
+.product {
+    padding: 5px;
+    width: 14%;
+    min-width: 250px;
+    min-height: 200px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: rgb(243, 243, 253);
+    box-shadow: 5px 5px 10px gainsboro;
+}
+
+.product:hover {
+    width: 15%;
+    height: 200px;
+}
+
+.product>h4,
+.product>p {
+    margin: 0%;
+}
+
+.product>p {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(43, 124, 230);
+}
+
+.product img {
+    width: 98%;
+    height: 100px;
+}
+
+.product button {
+    width: 100%;
+    background-color: lavender;
+    font-size: 16px;
+    border: 1px solid blue;
+    color: orange;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.product button:active {
+    background-color: rgb(250, 234, 230);
+    border: 1px solid rgb(0, 255, 76);
+}
+
+#main {
+    padding-left: 20px;
+    border: 2px solid black;
+    padding-bottom: 5px;
+}
